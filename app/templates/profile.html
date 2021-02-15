@@ -1,0 +1,54 @@
+{% extends 'base.html'%}
+
+{% block main %}
+
+<div class="card-container">
+
+    <div class="upper-container">
+        <div class="image-container">
+            <img id="icon" src="{{url_for('static', filename ='image/profile.png')}}"/>
+
+        </div>
+        <div>
+            <h2>Kyle Henry</h2>
+            <h7>@Khenry</h7><br>
+            <h7>Georgetown, St.Vincent</h7><br>
+            <h7>Joined February,2021</h7>
+        </div>
+    </div>
+
+    <div class="lower-container">
+        <div>
+            <p>
+                Inspired to build and design website. <br>
+                Just say the word and I will design.
+            </p>
+
+         <div class="follows">
+             <div class="number">
+                 <div class="item">
+                     <span>10</span>
+                     Post
+                 </div>
+                 <div class="item">
+                    <span>210</span>
+                    Followers
+                </div>
+                <div class="item">
+                    <span>300</span>
+                    Following
+                </div>
+                
+             </div>
+         </div>   
+
+        </div>
+        <div><a href="button"class="follow-btn">Follow</a>
+            
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock%}
